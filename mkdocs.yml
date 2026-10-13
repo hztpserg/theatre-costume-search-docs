@@ -1,0 +1,115 @@
+site_name: Theatre Costume Search Documentation
+site_description: Bilingual technical, operational and defence documentation for Theatre Costume Search
+site_author: Khrystyna Antoniuk
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.code.select
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
+plugins:
+  - search
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - English:
+      - Start here: en/index.md
+      - Project history: en/project-history.md
+      - Architecture: en/architecture.md
+      - Project structure: en/project-structure.md
+      - Code walkthrough: en/code-walkthrough.md
+      - Database V2: en/database.md
+      - Search & filters: en/search.md
+      - Admin, photos & security: en/admin-security.md
+      - API reference: en/api-reference.md
+      - New computer setup: en/new-computer-setup.md
+      - Development workflow: en/development-workflow.md
+      - Railway production: en/railway.md
+      - Production deployment: en/production-deployment.md
+      - Windows desktop: en/desktop.md
+      - Desktop build & release: en/desktop-build-release.md
+      - Complete release workflow: en/release-workflow.md
+      - Git & repository administration: en/git-admin.md
+      - Testing & recovery: en/testing-recovery.md
+      - Troubleshooting: en/troubleshooting.md
+      - Screenshot plan: en/screenshots-tour.md
+      - Defence guide: en/defence-guide.md
+      - Defence cheat sheet: en/cheat-sheet.md
+  - Castellano:
+      - Empieza aquí: es/index.md
+      - Historia del proyecto: es/historia.md
+      - Arquitectura: es/arquitectura.md
+      - Estructura del proyecto: es/estructura-proyecto.md
+      - Recorrido del código: es/recorrido-codigo.md
+      - Base de datos V2: es/base-datos.md
+      - Búsqueda y filtros: es/busqueda.md
+      - Administración, fotos y seguridad: es/admin-seguridad.md
+      - Referencia API: es/api-reference.md
+      - Instalación en un ordenador nuevo: es/nuevo-ordenador.md
+      - Flujo de desarrollo: es/flujo-desarrollo.md
+      - Producción Railway: es/railway.md
+      - Despliegue a producción: es/despliegue-produccion.md
+      - Escritorio Windows: es/escritorio.md
+      - Build y release de Desktop: es/desktop-build-release.md
+      - Flujo completo de release: es/flujo-release.md
+      - Git y administración del repositorio: es/git-admin.md
+      - Pruebas y recuperación: es/pruebas-recuperacion.md
+      - Solución de problemas: es/solucion-problemas.md
+      - Plan de capturas: es/plan-capturas.md
+      - Guía de defensa: es/guia-defensa.md
+      - Chuleta de defensa: es/chuleta.md
